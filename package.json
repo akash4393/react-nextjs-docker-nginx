@@ -30,6 +30,6 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,}": ["./node_modules/.bin/eslint — fix", "git add"]
+    "*.{js,jsx,ts,tsx,}": ["./node_modules/.bin/eslint —-fix", "git add"]
   }
 }
