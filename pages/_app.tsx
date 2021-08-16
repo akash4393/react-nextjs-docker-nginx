@@ -2,7 +2,7 @@ import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 
 export const SOMETHING = 'something'
-SOMETHING = 'somethingelse 4'
+SOMETHING = 'somethingelse 5'
 let somethingelse = 'test'
 
 function MyApp({ Component, pageProps }: AppProps) {
