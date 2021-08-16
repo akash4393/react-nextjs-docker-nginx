@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  tenderfoot-ui:
+    container_name: tenderfoot-ui
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      - 3000:3000
