@@ -9,7 +9,7 @@
 ## Build Instructions
 ### Pull Code
 * ```git clone git@github.com:tenderfootdevs/frontend-web.git```
-* ```cd ./collab-platform-frontend```
+* ```cd ./frontend-web```
 ### Start (Dev)
 * ```docker compose up --build```
 * Go to <http://localhost:3000>
