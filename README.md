@@ -1,4 +1,5 @@
-# Frontend Codebase for Tenderfoot
+# React-Typescript-Nextjs-Docker-Nginx Boilerplate
+React-Typescript-Nextjs boilerplate with Docker to run the code in isolated env. Folder structure added to get started with basic web-applications. Docker deployment configuration set to use Nginx with caching. Eslint & Prettier set up to auto-update file on save along with using Husky & Lint-Staged to run lint check on git commit.
 
 ## Dev Technologies
 * Docker
@@ -10,8 +11,8 @@
 
 ## Build Instructions
 ### Pull Code
-* ```git clone git@github.com:tenderfootdevs/frontend-web.git```
-* ```cd ./frontend-web```
+* ```git clone git@github.com:akash4393/react-nextjs-docker-nginx.git```
+* ```cd ./react-nextjs-docker-nginx```
 ### Start (Dev)
 * ```docker compose up --build```
 * Go to <http://localhost:3000>
