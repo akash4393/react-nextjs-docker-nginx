@@ -1,0 +1,35 @@
+# pull official base image
+FROM node:13.12.0-alpine
+
+# set working directory
+WORKDIR /app
+
+# add `/app/node_modules/.bin` to $PATH
+ENV PATH /app/node_modules/.bin:$PATH
+
+# install app dependencies
+COPY package.json ./
+COPY package-lock.json ./
+# Can potentially speed up the build times by using npm install --production and removing lint run 
+# on next build
+RUN npm install
+
+# Copy all files
+COPY ./ ./
+
+# Build app
+RUN npm run build
+
+# expose port
+EXPOSE 3000
+
+# Give ownership of /app folder to the node user that will be running the 
+# npm start script
+RUN chown -Rh node:node /app
+
+# Run container as non-root (unprivileged) user
+# The node user is provided in the Node.js Alpine base image
+USER node
+
+# Run npm start script when container starts
+CMD [ "npm", "start" ]
