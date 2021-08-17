@@ -5,6 +5,8 @@
 * Next.js
 * Typescript
 * Nginx (prod)
+* Eslint & Prettier
+* Husky & Lint-Staged
 
 ## Build Instructions
 ### Pull Code
